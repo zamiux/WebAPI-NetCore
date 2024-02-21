@@ -1,0 +1,30 @@
+﻿level 200 - success:
+
+200 - ok
+201 - created
+204 - created but not returned
+----------------------------------------------
+level 400 - client mistakes:
+
+400 - bad request
+401 - unauthorize
+403 - authorized but not access - forbidden
+404 - not found
+406 - not acceptable
+409 - conflict
+-----------------------------------------------
+level 500 - server mistakes:
+
+500 - internal server Error
+-------------------------------------------
+application/json : JSON Result -> Default
+application/xml : XML Result
+--------------------------------------------------------------------------
+api be 2 soorat hastesh: 1.input , 2.output, (format content negotaion)
+* input: mitoone json base, output: mitoone json bashe
+* input: mitoone xml base, output: mitoone xml bashe
+* input: mitoone json base, output: mitoone xml bashe
+* input: mitoone xml base, output: mitoone json bashe
+------------------------------------------------------------ 
+update Full entity model => [httpput]
+update single entity model => [httppatch]

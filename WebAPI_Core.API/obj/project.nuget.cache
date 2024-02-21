@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G6YeSUhnVP9a6oGDYBBbeA0p8UYPj9HSPnQZm8ucjTxFd5ElNmfx/BFuAB+E30+xwFA+eUub3xKiYRpDIoqTAg==",
+  "dgSpecHash": "Iso/zfptQ8BA+6ybreTUyL5rkksLg7p9VHnoEKqxB7/bG8Qd9VgI5Yjl2DjhFuLed5zZe8DN0L62zdc2uamZNA==",
   "success": true,
-  "projectFilePath": "D:\\Projects\\WebAPI_Core\\WebAPI_Core.API\\WebAPI_Core.API.csproj",
+  "projectFilePath": "D:\\Projects\\WebAPI_Core\\WebAPI-NetCore\\WebAPI_Core.API\\WebAPI_Core.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\m.zamani\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
     "C:\\Users\\m.zamani\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",

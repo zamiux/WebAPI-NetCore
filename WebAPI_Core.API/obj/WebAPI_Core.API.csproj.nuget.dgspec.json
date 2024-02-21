@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projects\\WebAPI_Core\\WebAPI_Core.API\\WebAPI_Core.API.csproj": {}
+    "D:\\Projects\\WebAPI_Core\\WebAPI-NetCore\\WebAPI_Core.API\\WebAPI_Core.API.csproj": {}
   },
   "projects": {
-    "D:\\Projects\\WebAPI_Core\\WebAPI_Core.API\\WebAPI_Core.API.csproj": {
+    "D:\\Projects\\WebAPI_Core\\WebAPI-NetCore\\WebAPI_Core.API\\WebAPI_Core.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projects\\WebAPI_Core\\WebAPI_Core.API\\WebAPI_Core.API.csproj",
+        "projectUniqueName": "D:\\Projects\\WebAPI_Core\\WebAPI-NetCore\\WebAPI_Core.API\\WebAPI_Core.API.csproj",
         "projectName": "WebAPI_Core.API",
-        "projectPath": "D:\\Projects\\WebAPI_Core\\WebAPI_Core.API\\WebAPI_Core.API.csproj",
+        "projectPath": "D:\\Projects\\WebAPI_Core\\WebAPI-NetCore\\WebAPI_Core.API\\WebAPI_Core.API.csproj",
         "packagesPath": "C:\\Users\\m.zamani\\.nuget\\packages\\",
-        "outputPath": "D:\\Projects\\WebAPI_Core\\WebAPI_Core.API\\obj\\",
+        "outputPath": "D:\\Projects\\WebAPI_Core\\WebAPI-NetCore\\WebAPI_Core.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
