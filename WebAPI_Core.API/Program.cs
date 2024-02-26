@@ -1,18 +1,37 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.StaticFiles;
+using Serilog;
+
+#region Serilog configuration
+Log.Logger = new LoggerConfiguration()
+    .MinimumLevel.Debug()
+    .WriteTo.Console()
+    .WriteTo.File("logs/cityinfo.txt", rollingInterval: RollingInterval.Day)
+    .CreateLogger();
+#endregion
 
 var builder = WebApplication.CreateBuilder(args);
+
+#region Serilog Service
+builder.Host.UseSerilog();
+#endregion
+
+//clear log, no loggger
+//builder.Logging.ClearProviders();
 
 // Add services to the container.
 
 //builder.Services.AddControllers();
 
-#region add return xml type in api
+#region add return xml type in api 
 // add return xml type in api 
 builder.Services.AddControllers(options =>
 {
     options.ReturnHttpNotAcceptable = true;
-}).AddXmlDataContractSerializerFormatters();
+})  
+    .AddNewtonsoftJson()
+    .AddXmlDataContractSerializerFormatters();
+
 
 #endregion
 
