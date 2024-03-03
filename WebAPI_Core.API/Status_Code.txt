@@ -47,3 +47,12 @@ Serilog packages :
     <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
     <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
 -------------------------------------------------------------------------------
+context library: 
+1- Microsoft.EntityFrameworkCore
+
+
+sqllite db library:
+Microsoft.EntityFrameworkCore.Sqlite.Core
+
+For Migration library : 
+Microsoft.EntityFrameworkCore.Tools

@@ -28,3 +28,31 @@ api be 2 soorat hastesh: 1.input , 2.output, (format content negotaion)
 ------------------------------------------------------------ 
 update Full entity model => [httpput]
 update single entity model => [httppatch]
+
+[
+	{
+		"op":"replace",
+		"path":"/name",
+		"value":"the name is new value"
+	},
+	{
+		"op":"replace",
+		"path":"/description",
+		"value":"the description is new value"
+	}
+]
+-------------------------------------------------
+Serilog packages : 
+    <PackageReference Include="Serilog.AspNetCore" Version="6.1.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="5.0.1" />
+    <PackageReference Include="Serilog.Sinks.File" Version="5.0.0" />
+-------------------------------------------------------------------------------
+context library: 
+1- Microsoft.EntityFrameworkCore
+
+
+sqllite db library:
+Microsoft.EntityFrameworkCore.Sqlite.Core
+
+For Migration library : 
+Microsoft.EntityFrameworkCore.Tools

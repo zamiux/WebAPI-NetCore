@@ -1,5 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Mvc;
+using WebAPI_Core.API.Entites;
 using WebAPI_Core.API.Model;
+using WebAPI_Core.API.Repositories;
 
 namespace WebAPI_Core.API.Controllers
 {
@@ -10,6 +13,21 @@ namespace WebAPI_Core.API.Controllers
     [Route("api/Cities")]
     public class CitiesController : ControllerBase
     {
+        #region Dependency Injection
+        private readonly CitiesDataStore _CitydataStore;
+        private readonly ICityRepository _cityRepository;
+        //add auto mapper
+        private readonly IMapper _mapper;
+        public CitiesController(CitiesDataStore citydataStore,
+            ICityRepository cityRepository,
+            IMapper mapper)
+        {
+            _CitydataStore = citydataStore;
+            _cityRepository = cityRepository ?? throw new ArgumentException(nameof(cityRepository));
+            //auto mapper
+            _mapper = mapper;
+        }
+        #endregion
 
         //[HttpGet("api/cities")]
         //[HttpGet] // type data transfer
@@ -30,9 +48,29 @@ namespace WebAPI_Core.API.Controllers
         //}
 
         [HttpGet] // type data transfer
-        public ActionResult<IEnumerable<City>> GetCities()
+        public async Task<ActionResult<IEnumerable<CityDto>>> GetCities()
         {
-            return Ok(CitiesDataStore.current.Cities);
+            //return Ok(_CitydataStore.Cities);
+            var Cities = await _cityRepository.GetCitiesAsync();
+            var result = new List<CityDto>();
+
+            foreach (var city in Cities)
+            {
+                result.Add(new CityDto()
+                {
+                    Id = city.Id,
+                    Name = city.Name,
+                    Description = city.Description
+                });
+            }
+
+            return Ok(result);
+
+            #region Auto Mapper
+            //return Ok(
+            //    _mapper.Map<IEnumerable<CityDto>>(Cities)
+            //    );
+            #endregion
         }
 
         //[HttpGet("{id}")]
@@ -44,18 +82,37 @@ namespace WebAPI_Core.API.Controllers
         //}
 
         [HttpGet("{id}")]
-        public ActionResult<City> GetCity(int id)
+        public async Task<ActionResult<Entites.City>> GetCity(int id,bool isExitpointOfInterest = false)
         {
-            var cityToReturn = (CitiesDataStore.current
-                .Cities
-                .FirstOrDefault(c => c.Id == id));
+            #region Old Code
+            //var cityToReturn = (_CitydataStore
+            //    .Cities
+            //    .FirstOrDefault(c => c.Id == id));
 
-            if (cityToReturn == null)
+            //if (cityToReturn == null)
+            //{
+            //    return NotFound();
+            //}
+
+            //return Ok(cityToReturn);
+            #endregion
+
+            #region Auto_Mapper
+            var city_data = await _cityRepository.GetCityAsyncById(id, isExitpointOfInterest);
+
+            if (city_data == null)
             {
                 return NotFound();
             }
 
-            return Ok(cityToReturn);
+            if (isExitpointOfInterest == true)
+            {
+                return Ok(_mapper.Map<CityDto>(city_data));
+            }
+
+            return Ok(_mapper.Map<CityDto>(city_data));
+            #endregion
+
         }
     }
 }

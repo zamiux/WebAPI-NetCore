@@ -123,6 +123,6 @@ namespace WebAPI_Core.API
             };
         }
         public List<City> Cities { get; set; }
-        public static CitiesDataStore current { get; } = new CitiesDataStore();
+        //public static CitiesDataStore current { get; } = new CitiesDataStore();
     }
 }

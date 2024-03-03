@@ -1,6 +1,11 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.StaticFiles;
+using Microsoft.EntityFrameworkCore;
 using Serilog;
+using WebAPI_Core.API;
+using WebAPI_Core.API.dbContexts;
+using WebAPI_Core.API.Repositories;
+using WebAPI_Core.API.Services;
 
 #region Serilog configuration
 Log.Logger = new LoggerConfiguration()
@@ -42,6 +47,30 @@ builder.Services.AddSwaggerGen();
 
 #region Format Type File Automate
 builder.Services.AddSingleton<FileExtensionContentTypeProvider>();
+#endregion
+
+#region Add Special Service ; Type:singleton (Polymorphism)
+
+#if DEBUG
+builder.Services.AddSingleton<ILocalMailService, LocalMailService>();
+#else
+builder.Services.AddSingleton<ILocalMailService, CloudMailService>();
+#endif
+
+builder.Services.AddSingleton<CitiesDataStore>();
+builder.Services.AddScoped<ICityRepository,CityRepository>();
+#endregion
+
+#region Auto Mapper Service
+builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
+#endregion
+
+#region DbContext Connection_String
+builder.Services.AddDbContext<WebApi_dbContext>(option =>
+{
+    //option.UseSqlite("Data Source=webapi.db");
+    option.UseSqlite(builder.Configuration["ConnectionStrings:WebapiConnectionStrings"]);
+}); // like add scopped
 #endregion
 
 var app = builder.Build();

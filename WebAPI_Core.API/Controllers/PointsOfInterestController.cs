@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.FileProviders;
 using WebAPI_Core.API.Model;
+using WebAPI_Core.API.Services;
 using WebAPI_Core.API.VM;
 
 namespace WebAPI_Core.API.Controllers
@@ -12,9 +13,16 @@ namespace WebAPI_Core.API.Controllers
     {
         #region dependenct Injection
         private readonly ILogger<PointsOfInterestController> _logger;
-        public PointsOfInterestController(ILogger<PointsOfInterestController> logger)
+        private readonly ILocalMailService _mailService;
+        private readonly CitiesDataStore _CitydataStore;
+
+        public PointsOfInterestController(ILogger<PointsOfInterestController> logger,
+            ILocalMailService mailService,
+            CitiesDataStore citydataStore)
         {
             _logger = logger ?? throw new ArgumentNullException(nameof(logger));
+            _mailService = mailService;
+            _CitydataStore = citydataStore;
 
             //how to get service from program.cs in class/acrion (special)
             //HttpContext.RequestServices.GetService
@@ -28,7 +36,7 @@ namespace WebAPI_Core.API.Controllers
         {
             try
             {
-                var city = CitiesDataStore.current.Cities
+                var city = _CitydataStore.Cities
                 .FirstOrDefault(c => c.Id == cityId);
 
                 if (city == null)
@@ -55,7 +63,7 @@ namespace WebAPI_Core.API.Controllers
 
         public ActionResult<IEnumerable<PointOfInterest>> GetSinglePoint(int cityId, int pointofinterestId)
         {
-            var city = CitiesDataStore.current.Cities
+            var city = _CitydataStore.Cities
                 .FirstOrDefault(c => c.Id == cityId);
 
             if (city == null)
@@ -87,7 +95,7 @@ namespace WebAPI_Core.API.Controllers
             }
 
             //if cityid input is Exist ? 
-            var city_data = CitiesDataStore.current.Cities
+            var city_data = _CitydataStore.Cities
                 .FirstOrDefault(c => c.Id == Cityid);
 
 
@@ -97,7 +105,7 @@ namespace WebAPI_Core.API.Controllers
             }
 
             // max id pointofinterest
-            var max_pointofinterestId = CitiesDataStore.current.Cities
+            var max_pointofinterestId = _CitydataStore.Cities
                 .SelectMany(c => c.pointOfInterests)
                 .Max(p => p.Id);
 
@@ -131,7 +139,7 @@ namespace WebAPI_Core.API.Controllers
             }
 
             //if city input is Exist ? 
-            var city_data = CitiesDataStore.current.Cities
+            var city_data = _CitydataStore.Cities
                 .FirstOrDefault(c => c.Id == cityId);
 
 
@@ -164,7 +172,7 @@ namespace WebAPI_Core.API.Controllers
             )
         {
             //if city input is Exist ? 
-            var city_data = CitiesDataStore.current.Cities
+            var city_data = _CitydataStore.Cities
                 .FirstOrDefault(c => c.Id == cityId);
 
 
@@ -216,7 +224,7 @@ namespace WebAPI_Core.API.Controllers
             , int pointofinterestId)
         {
             //if city input is Exist ? 
-            var city_data = CitiesDataStore.current.Cities
+            var city_data = _CitydataStore.Cities
                 .FirstOrDefault(c => c.Id == cityId);
 
 
@@ -236,6 +244,9 @@ namespace WebAPI_Core.API.Controllers
 
             //delete
             city_data.pointOfInterests.Remove(point_data);
+
+            _mailService.SendMail("Remove Subject", "Message Related!!");
+
             return NoContent();
         }
         #endregion

@@ -1,0 +1,60 @@
+2024-02-29 14:52:29.246 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 14:52:30.110 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 14:52:30.243 +03:30 [DBG] DetectChanges starting for 'WebApi_dbContext'.
+2024-02-29 14:52:30.246 +03:30 [DBG] DetectChanges completed for 'WebApi_dbContext'.
+2024-02-29 14:52:30.326 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 14:52:41.345 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 14:52:42.130 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 14:52:42.211 +03:30 [DBG] Migrating using database 'main' on server 'webapi.db'.
+2024-02-29 14:52:42.217 +03:30 [DBG] Opening connection to database 'main' on server 'webapi.db'.
+2024-02-29 14:52:42.229 +03:30 [DBG] An error occurred using the connection to database 'main' on server 'webapi.db'.
+2024-02-29 14:52:42.235 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 14:53:24.410 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 14:53:25.120 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 14:53:25.164 +03:30 [DBG] Migrating using database 'main' on server 'webapi.db'.
+2024-02-29 14:53:25.170 +03:30 [DBG] Opening connection to database 'main' on server 'webapi.db'.
+2024-02-29 14:53:25.177 +03:30 [DBG] An error occurred using the connection to database 'main' on server 'webapi.db'.
+2024-02-29 14:53:25.182 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 14:54:50.144 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 14:54:51.281 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 14:54:51.363 +03:30 [DBG] Migrating using database 'main' on server 'webapi.db'.
+2024-02-29 14:54:51.371 +03:30 [DBG] Opening connection to database 'main' on server 'webapi.db'.
+2024-02-29 14:54:51.381 +03:30 [DBG] An error occurred using the connection to database 'main' on server 'webapi.db'.
+2024-02-29 14:54:51.387 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 14:57:18.768 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 14:57:19.606 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 14:57:19.658 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 14:59:13.365 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 14:59:14.040 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 14:59:14.086 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 15:00:37.547 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 15:00:38.253 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 15:00:38.291 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 15:07:49.341 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 15:07:50.194 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 15:07:50.286 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 15:09:09.880 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 15:09:10.524 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 15:09:10.566 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 15:10:50.644 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 15:10:51.421 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 15:10:51.468 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 15:14:26.196 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 15:14:26.768 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 15:14:26.788 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 15:17:07.135 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 15:17:07.893 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 15:17:08.001 +03:30 [DBG] DetectChanges starting for 'WebApi_dbContext'.
+2024-02-29 15:17:08.005 +03:30 [DBG] DetectChanges completed for 'WebApi_dbContext'.
+2024-02-29 15:17:08.005 +03:30 [DBG] DetectChanges starting for 'WebApi_dbContext'.
+2024-02-29 15:17:08.005 +03:30 [DBG] DetectChanges completed for 'WebApi_dbContext'.
+2024-02-29 15:17:08.066 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 15:17:11.974 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 15:17:12.565 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 15:17:12.628 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 15:41:05.993 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 15:41:07.037 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 15:41:07.093 +03:30 [DBG] 'WebApi_dbContext' disposed.
+2024-02-29 15:52:20.498 +03:30 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-02-29 15:52:21.150 +03:30 [INF] Entity Framework Core 6.0.27 initialized 'WebApi_dbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:6.0.27' with options: None
+2024-02-29 15:52:21.202 +03:30 [DBG] 'WebApi_dbContext' disposed.
