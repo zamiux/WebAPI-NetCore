@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebAPI_Core.API.Entites;
 using WebAPI_Core.API.Model;
@@ -11,6 +12,7 @@ namespace WebAPI_Core.API.Controllers
     //[Route("api/[controller]")] // ba "[controller]" chon ye kalame Reserve Shodast,
     // be in soorat ke mifahme manzoore shoma name Controller hastesh. 
     [Route("api/Cities")]
+    [Authorize]
     public class CitiesController : ControllerBase
     {
         #region Dependency Injection

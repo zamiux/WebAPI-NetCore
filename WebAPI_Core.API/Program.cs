@@ -1,7 +1,10 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.IdentityModel.Tokens;
 using Serilog;
+using System.Text;
 using WebAPI_Core.API;
 using WebAPI_Core.API.dbContexts;
 using WebAPI_Core.API.Repositories;
@@ -22,11 +25,11 @@ builder.Host.UseSerilog();
 #endregion
 
 //clear log, no loggger
-//builder.Logging.ClearProviders();
+builder.Logging.ClearProviders();
 
 // Add services to the container.
 
-//builder.Services.AddControllers();
+builder.Services.AddControllers();
 
 #region add return xml type in api 
 // add return xml type in api 
@@ -73,6 +76,26 @@ builder.Services.AddDbContext<WebApi_dbContext>(option =>
 }); // like add scopped
 #endregion
 
+#region JWT Bearer
+builder.Services.AddAuthentication("Bearer").AddJwtBearer(option=>
+{
+    option.TokenValidationParameters = new()
+    {
+        //valicate token
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateIssuerSigningKey = true,
+
+        //set value token
+        ValidIssuer = builder.Configuration["Authentication:Issuer"],
+        ValidAudience = builder.Configuration["Authentication:Audience"],
+
+        //set value signiture
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.ASCII.GetBytes(builder.Configuration["Authentication:SecretForKey"]))
+    };
+});
+#endregion
+
 var app = builder.Build();
 
 #region Special Middleware Pipeline
@@ -90,6 +113,10 @@ app.UseHttpsRedirection(); // middleware redirect http to https
     
 app.UseRouting(); // use routing
 
+
+#region middleware JWT Bearer Authentication
+app.UseAuthentication();
+#endregion
 app.UseAuthorization(); // middleware authorize user
 
 // ye Map baraye Routing va Dastresi be Controllers

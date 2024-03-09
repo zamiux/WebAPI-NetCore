@@ -113,3 +113,8 @@ D:\Projects\WebAPI_Core\WebAPI-NetCore\WebAPI_Core.API\obj\Debug\net6.0\refint\W
 D:\Projects\WebAPI_Core\WebAPI-NetCore\WebAPI_Core.API\obj\Debug\net6.0\WebAPI_Core.API.pdb
 D:\Projects\WebAPI_Core\WebAPI-NetCore\WebAPI_Core.API\obj\Debug\net6.0\WebAPI_Core.API.genruntimeconfig.cache
 D:\Projects\WebAPI_Core\WebAPI-NetCore\WebAPI_Core.API\obj\Debug\net6.0\ref\WebAPI_Core.API.dll
+D:\Projects\WebAPI_Core\WebAPI-NetCore\WebAPI_Core.API\bin\Debug\net6.0\AutoMapper.dll
+D:\Projects\WebAPI_Core\WebAPI-NetCore\WebAPI_Core.API\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\Projects\WebAPI_Core\WebAPI-NetCore\WebAPI_Core.API\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\Projects\WebAPI_Core\WebAPI-NetCore\WebAPI_Core.API\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\Projects\WebAPI_Core\WebAPI-NetCore\WebAPI_Core.API\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll

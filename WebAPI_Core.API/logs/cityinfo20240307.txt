@@ -1,0 +1,319 @@
+2024-03-07 11:00:14.665 +03:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-07 11:00:14.786 +03:30 [DBG] Hosting starting
+2024-03-07 11:00:15.016 +03:30 [DBG] Using development certificate: CN=localhost (Thumbprint: E46C81EF0C1C1F2CC97AFB4F380CC103B7548110)
+2024-03-07 11:00:15.068 +03:30 [INF] Now listening on: https://localhost:7267
+2024-03-07 11:00:15.070 +03:30 [INF] Now listening on: http://localhost:5180
+2024-03-07 11:00:15.071 +03:30 [DBG] Loaded hosting startup assembly WebAPI_Core.API
+2024-03-07 11:00:15.073 +03:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-07 11:00:15.074 +03:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-07 11:00:15.075 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-07 11:00:15.076 +03:30 [INF] Hosting environment: Development
+2024-03-07 11:00:15.077 +03:30 [INF] Content root path: D:\Projects\WebAPI_Core\WebAPI-NetCore\WebAPI_Core.API\
+2024-03-07 11:00:15.078 +03:30 [DBG] Hosting started
+2024-03-07 11:00:15.201 +03:30 [DBG] Connection id "0HN1UF1N99F6O" received FIN.
+2024-03-07 11:00:15.214 +03:30 [DBG] Connection id "0HN1UF1N99F6O" accepted.
+2024-03-07 11:00:15.221 +03:30 [DBG] Connection id "0HN1UF1N99F6O" started.
+2024-03-07 11:00:15.266 +03:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-03-07 11:00:15.383 +03:30 [DBG] Connection id "0HN1UF1N99F6O" stopped.
+2024-03-07 11:00:15.389 +03:30 [DBG] Connection id "0HN1UF1N99F6O" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-07 11:00:16.617 +03:30 [DBG] Connection id "0HN1UF1N99F6P" accepted.
+2024-03-07 11:00:16.620 +03:30 [DBG] Connection id "0HN1UF1N99F6P" started.
+2024-03-07 11:00:16.626 +03:30 [DBG] Connection id "0HN1UF1N99F6Q" accepted.
+2024-03-07 11:00:16.634 +03:30 [DBG] Connection id "0HN1UF1N99F6Q" started.
+2024-03-07 11:00:16.677 +03:30 [DBG] Connection id "0HN1UF1N99F6P" received FIN.
+2024-03-07 11:00:16.695 +03:30 [DBG] Connection 0HN1UF1N99F6Q established using the following protocol: "Tls12"
+2024-03-07 11:00:16.695 +03:30 [DBG] Connection 0HN1UF1N99F6P established using the following protocol: "Tls12"
+2024-03-07 11:00:16.712 +03:30 [DBG] Connection id "0HN1UF1N99F6P" is closed. The last processed stream ID was 0.
+2024-03-07 11:00:16.717 +03:30 [DBG] Connection id "0HN1UF1N99F6P" sending FIN because: "The client closed the connection."
+2024-03-07 11:00:16.719 +03:30 [DBG] Connection id "0HN1UF1N99F6P" stopped.
+2024-03-07 11:00:16.760 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/swagger - -
+2024-03-07 11:00:16.800 +03:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-03-07 11:00:16.870 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/swagger - - - 301 0 - 113.3398ms
+2024-03-07 11:00:16.881 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/swagger/index.html - -
+2024-03-07 11:00:16.973 +03:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-03-07 11:00:17.335 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/_framework/aspnetcore-browser-refresh.js - -
+2024-03-07 11:00:17.335 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/swagger/swagger-ui-standalone-preset.js - -
+2024-03-07 11:00:17.335 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/swagger/swagger-ui-bundle.js - -
+2024-03-07 11:00:17.335 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/swagger/swagger-ui.css - -
+2024-03-07 11:00:17.341 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 5.4450ms
+2024-03-07 11:00:17.351 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/_vs/browserLink - -
+2024-03-07 11:00:17.352 +03:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-03-07 11:00:17.356 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/swagger/index.html - - - 200 - text/html;charset=utf-8 475.3203ms
+2024-03-07 11:00:17.381 +03:30 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-03-07 11:00:17.384 +03:30 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-03-07 11:00:17.395 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/swagger/swagger-ui.css - - - 200 143632 text/css 59.6497ms
+2024-03-07 11:00:17.401 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/swagger/swagger-ui-standalone-preset.js - - - 200 337162 application/javascript 65.7226ms
+2024-03-07 11:00:17.408 +03:30 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-03-07 11:00:17.410 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/swagger/swagger-ui-bundle.js - - - 200 1092889 application/javascript 75.3002ms
+2024-03-07 11:00:17.692 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 340.2329ms
+2024-03-07 11:00:17.853 +03:30 [DBG] Connection id "0HN1UF1N99F6Q" received FIN.
+2024-03-07 11:00:17.856 +03:30 [DBG] Connection id "0HN1UF1N99F6Q" sending FIN because: "The client closed the connection."
+2024-03-07 11:00:17.856 +03:30 [DBG] Connection id "0HN1UF1N99F6Q" is closed. The last processed stream ID was 13.
+2024-03-07 11:00:17.861 +03:30 [DBG] Connection id "0HN1UF1N99F6Q" stopped.
+2024-03-07 11:00:17.948 +03:30 [DBG] Connection id "0HN1UF1N99F6R" accepted.
+2024-03-07 11:00:17.951 +03:30 [DBG] Connection id "0HN1UF1N99F6R" started.
+2024-03-07 11:00:17.962 +03:30 [DBG] Connection 0HN1UF1N99F6R established using the following protocol: "Tls12"
+2024-03-07 11:00:17.964 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/swagger/v1/swagger.json - -
+2024-03-07 11:00:18.042 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/swagger/favicon-32x32.png - -
+2024-03-07 11:00:18.044 +03:30 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2024-03-07 11:00:18.050 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/swagger/favicon-32x32.png - - - 200 628 image/png 8.0400ms
+2024-03-07 11:00:18.209 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WebAPI_Core.API.Controllers.PointsOfInterestController.GetPoint (WebAPI_Core.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate schema for type - System.Collections.Generic.IEnumerable`1[WebAPI_Core.API.Model.PointOfInterest]. See inner exception
+ ---> System.InvalidOperationException: Can't use schemaId "$PointOfInterest" for type "$WebAPI_Core.API.Model.PointOfInterest". The same schemaId is already used for type "$WebAPI_Core.API.Entites.PointOfInterest"
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRepository.RegisterType(Type type, String schemaId)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateReferencedSchema(DataContract dataContract, SchemaRepository schemaRepository, Func`1 definitionFactory)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateConcreteSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchemaForType(Type modelType, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchema(Type modelType, SchemaRepository schemaRepository, MemberInfo memberInfo, ParameterInfo parameterInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.CreateArraySchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.<>c__DisplayClass10_0.<GenerateConcreteSchema>b__1()
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateConcreteSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchemaForType(Type modelType, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchema(Type modelType, SchemaRepository schemaRepository, MemberInfo memberInfo, ParameterInfo parameterInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchema(Type type, SchemaRepository schemaRepository, PropertyInfo propertyInfo, ParameterInfo parameterInfo)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchema(Type type, SchemaRepository schemaRepository, PropertyInfo propertyInfo, ParameterInfo parameterInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponseMediaType(ModelMetadata modelMetadata, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c__DisplayClass19_0.<GenerateResponse>b__2(String contentType)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateResponse(ApiDescription apiDescription, SchemaRepository schemaRepository, String statusCode, ApiResponseType apiResponseType)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateResponses(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-03-07 11:00:18.238 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 273.7195ms
+2024-03-07 11:00:27.849 +03:30 [DBG] Connection id "0HN1UF1N99F6R" received FIN.
+2024-03-07 11:00:27.851 +03:30 [DBG] Connection id "0HN1UF1N99F6R" is closed. The last processed stream ID was 3.
+2024-03-07 11:00:27.853 +03:30 [DBG] Connection id "0HN1UF1N99F6R" sending FIN because: "The client closed the connection."
+2024-03-07 11:00:27.855 +03:30 [DBG] Connection id "0HN1UF1N99F6R" stopped.
+2024-03-07 11:01:00.492 +03:30 [DBG] Config reload token fired. Checking for changes...
+2024-03-07 11:01:00.745 +03:30 [DBG] Config reload token fired. Checking for changes...
+2024-03-07 11:01:10.614 +03:30 [DBG] Config reload token fired. Checking for changes...
+2024-03-07 11:01:10.880 +03:30 [DBG] Config reload token fired. Checking for changes...
+2024-03-07 11:03:14.060 +03:30 [DBG] Config reload token fired. Checking for changes...
+2024-03-07 11:03:14.316 +03:30 [DBG] Config reload token fired. Checking for changes...
+2024-03-07 11:03:14.573 +03:30 [DBG] Config reload token fired. Checking for changes...
+2024-03-07 11:03:36.179 +03:30 [DBG] Connection id "0HN1UF1N99F6S" accepted.
+2024-03-07 11:03:36.180 +03:30 [DBG] Connection id "0HN1UF1N99F6S" received FIN.
+2024-03-07 11:03:36.182 +03:30 [DBG] Connection id "0HN1UF1N99F6S" started.
+2024-03-07 11:03:36.185 +03:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-03-07 11:03:36.186 +03:30 [DBG] Connection id "0HN1UF1N99F6S" stopped.
+2024-03-07 11:03:36.187 +03:30 [DBG] Connection id "0HN1UF1N99F6S" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-07 11:03:36.201 +03:30 [DBG] Connection id "0HN1UF1N99F6T" accepted.
+2024-03-07 11:03:36.203 +03:30 [DBG] Connection id "0HN1UF1N99F6T" started.
+2024-03-07 11:03:36.204 +03:30 [DBG] Connection 0HN1UF1N99F6T established using the following protocol: "Tls12"
+2024-03-07 11:03:36.206 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/swagger/index.html - -
+2024-03-07 11:03:36.207 +03:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-03-07 11:03:36.208 +03:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-03-07 11:03:36.220 +03:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-03-07 11:03:36.223 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/swagger/index.html - - - 200 - text/html;charset=utf-8 16.3179ms
+2024-03-07 11:03:36.233 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/_framework/aspnetcore-browser-refresh.js - -
+2024-03-07 11:03:36.233 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/_vs/browserLink - -
+2024-03-07 11:03:36.234 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 1.6105ms
+2024-03-07 11:03:36.280 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 47.1662ms
+2024-03-07 11:03:36.340 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/swagger/v1/swagger.json - -
+2024-03-07 11:03:36.344 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WebAPI_Core.API.Controllers.PointsOfInterestController.GetPoint (WebAPI_Core.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate schema for type - System.Collections.Generic.IEnumerable`1[WebAPI_Core.API.Model.PointOfInterest]. See inner exception
+ ---> System.InvalidOperationException: Can't use schemaId "$PointOfInterest" for type "$WebAPI_Core.API.Model.PointOfInterest". The same schemaId is already used for type "$WebAPI_Core.API.Entites.PointOfInterest"
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRepository.RegisterType(Type type, String schemaId)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateReferencedSchema(DataContract dataContract, SchemaRepository schemaRepository, Func`1 definitionFactory)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateConcreteSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchemaForType(Type modelType, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchema(Type modelType, SchemaRepository schemaRepository, MemberInfo memberInfo, ParameterInfo parameterInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.CreateArraySchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.<>c__DisplayClass10_0.<GenerateConcreteSchema>b__1()
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateConcreteSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchemaForType(Type modelType, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchema(Type modelType, SchemaRepository schemaRepository, MemberInfo memberInfo, ParameterInfo parameterInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchema(Type type, SchemaRepository schemaRepository, PropertyInfo propertyInfo, ParameterInfo parameterInfo)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchema(Type type, SchemaRepository schemaRepository, PropertyInfo propertyInfo, ParameterInfo parameterInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponseMediaType(ModelMetadata modelMetadata, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c__DisplayClass19_0.<GenerateResponse>b__2(String contentType)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateResponse(ApiDescription apiDescription, SchemaRepository schemaRepository, String statusCode, ApiResponseType apiResponseType)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateResponses(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-03-07 11:03:36.357 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 16.5562ms
+2024-03-07 11:03:37.902 +03:30 [DBG] Connection id "0HN1UF1N99F6T" received FIN.
+2024-03-07 11:03:37.908 +03:30 [DBG] Connection id "0HN1UF1N99F6T" is closed. The last processed stream ID was 7.
+2024-03-07 11:03:37.915 +03:30 [DBG] Connection id "0HN1UF1N99F6T" sending FIN because: "The client closed the connection."
+2024-03-07 11:03:37.921 +03:30 [DBG] Connection id "0HN1UF1N99F6T" stopped.
+2024-03-07 11:05:36.820 +03:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-07 11:05:36.893 +03:30 [DBG] Hosting starting
+2024-03-07 11:05:36.966 +03:30 [DBG] Using development certificate: CN=localhost (Thumbprint: E46C81EF0C1C1F2CC97AFB4F380CC103B7548110)
+2024-03-07 11:05:36.994 +03:30 [INF] Now listening on: https://localhost:7267
+2024-03-07 11:05:36.995 +03:30 [INF] Now listening on: http://localhost:5180
+2024-03-07 11:05:36.996 +03:30 [DBG] Loaded hosting startup assembly WebAPI_Core.API
+2024-03-07 11:05:36.996 +03:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-07 11:05:36.997 +03:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-07 11:05:36.998 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-07 11:05:36.999 +03:30 [INF] Hosting environment: Development
+2024-03-07 11:05:37.000 +03:30 [INF] Content root path: D:\Projects\WebAPI_Core\WebAPI-NetCore\WebAPI_Core.API\
+2024-03-07 11:05:37.001 +03:30 [DBG] Hosting started
+2024-03-07 11:05:37.095 +03:30 [DBG] Connection id "0HN1UF4N7387I" accepted.
+2024-03-07 11:05:37.095 +03:30 [DBG] Connection id "0HN1UF4N7387J" accepted.
+2024-03-07 11:05:37.097 +03:30 [DBG] Connection id "0HN1UF4N7387I" started.
+2024-03-07 11:05:37.097 +03:30 [DBG] Connection id "0HN1UF4N7387J" started.
+2024-03-07 11:05:37.112 +03:30 [DBG] Connection id "0HN1UF4N7387J" received FIN.
+2024-03-07 11:05:37.112 +03:30 [DBG] Connection id "0HN1UF4N7387I" received FIN.
+2024-03-07 11:05:37.124 +03:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-03-07 11:05:37.124 +03:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.<FillHandshakeBufferAsync>g__InternalFillHandshakeBufferAsync|189_0[TIOAdapter](TIOAdapter adap, ValueTask`1 task, Int32 minSize)
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-03-07 11:05:37.157 +03:30 [DBG] Connection id "0HN1UF4N7387J" stopped.
+2024-03-07 11:05:37.157 +03:30 [DBG] Connection id "0HN1UF4N7387I" stopped.
+2024-03-07 11:05:37.162 +03:30 [DBG] Connection id "0HN1UF4N7387J" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-07 11:05:37.162 +03:30 [DBG] Connection id "0HN1UF4N7387I" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-07 11:05:37.227 +03:30 [DBG] Connection id "0HN1UF4N7387K" accepted.
+2024-03-07 11:05:37.229 +03:30 [DBG] Connection id "0HN1UF4N7387K" started.
+2024-03-07 11:05:37.284 +03:30 [DBG] Connection 0HN1UF4N7387K established using the following protocol: "Tls12"
+2024-03-07 11:05:37.337 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/swagger/index.html - -
+2024-03-07 11:05:37.381 +03:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-03-07 11:05:37.640 +03:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-03-07 11:05:37.745 +03:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-03-07 11:05:37.750 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/swagger/index.html - - - 200 - text/html;charset=utf-8 417.2374ms
+2024-03-07 11:05:37.750 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/_vs/browserLink - -
+2024-03-07 11:05:37.750 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/_framework/aspnetcore-browser-refresh.js - -
+2024-03-07 11:05:37.758 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 7.7872ms
+2024-03-07 11:05:37.817 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 66.6697ms
+2024-03-07 11:05:37.899 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/swagger/v1/swagger.json - -
+2024-03-07 11:05:37.992 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WebAPI_Core.API.Controllers.PointsOfInterestController.GetPoint (WebAPI_Core.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate schema for type - System.Collections.Generic.IEnumerable`1[WebAPI_Core.API.Model.PointOfInterest]. See inner exception
+ ---> System.InvalidOperationException: Can't use schemaId "$PointOfInterest" for type "$WebAPI_Core.API.Model.PointOfInterest". The same schemaId is already used for type "$WebAPI_Core.API.Entites.PointOfInterest"
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRepository.RegisterType(Type type, String schemaId)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateReferencedSchema(DataContract dataContract, SchemaRepository schemaRepository, Func`1 definitionFactory)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateConcreteSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchemaForType(Type modelType, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchema(Type modelType, SchemaRepository schemaRepository, MemberInfo memberInfo, ParameterInfo parameterInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.CreateArraySchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.<>c__DisplayClass10_0.<GenerateConcreteSchema>b__1()
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateConcreteSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchemaForType(Type modelType, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchema(Type modelType, SchemaRepository schemaRepository, MemberInfo memberInfo, ParameterInfo parameterInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchema(Type type, SchemaRepository schemaRepository, PropertyInfo propertyInfo, ParameterInfo parameterInfo)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchema(Type type, SchemaRepository schemaRepository, PropertyInfo propertyInfo, ParameterInfo parameterInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponseMediaType(ModelMetadata modelMetadata, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c__DisplayClass19_0.<GenerateResponse>b__2(String contentType)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateResponse(ApiDescription apiDescription, SchemaRepository schemaRepository, String statusCode, ApiResponseType apiResponseType)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateResponses(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-03-07 11:05:38.039 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 139.9210ms
+2024-03-07 11:05:47.928 +03:30 [DBG] Connection id "0HN1UF4N7387K" received FIN.
+2024-03-07 11:05:47.946 +03:30 [DBG] Connection id "0HN1UF4N7387K" is closed. The last processed stream ID was 7.
+2024-03-07 11:05:47.948 +03:30 [DBG] Connection id "0HN1UF4N7387K" sending FIN because: "The client closed the connection."
+2024-03-07 11:05:47.962 +03:30 [DBG] Connection id "0HN1UF4N7387K" stopped.
+2024-03-07 11:26:37.145 +03:30 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-03-07 11:26:37.234 +03:30 [DBG] Hosting starting
+2024-03-07 11:26:37.410 +03:30 [DBG] Using development certificate: CN=localhost (Thumbprint: E46C81EF0C1C1F2CC97AFB4F380CC103B7548110)
+2024-03-07 11:26:37.500 +03:30 [INF] Now listening on: https://localhost:7267
+2024-03-07 11:26:37.502 +03:30 [INF] Now listening on: http://localhost:5180
+2024-03-07 11:26:37.503 +03:30 [DBG] Loaded hosting startup assembly WebAPI_Core.API
+2024-03-07 11:26:37.504 +03:30 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-03-07 11:26:37.506 +03:30 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-03-07 11:26:37.507 +03:30 [INF] Application started. Press Ctrl+C to shut down.
+2024-03-07 11:26:37.507 +03:30 [INF] Hosting environment: Development
+2024-03-07 11:26:37.508 +03:30 [INF] Content root path: D:\Projects\WebAPI_Core\WebAPI-NetCore\WebAPI_Core.API\
+2024-03-07 11:26:37.508 +03:30 [DBG] Hosting started
+2024-03-07 11:26:37.597 +03:30 [DBG] Connection id "0HN1UFGES6FPJ" received FIN.
+2024-03-07 11:26:37.608 +03:30 [DBG] Connection id "0HN1UFGES6FPJ" accepted.
+2024-03-07 11:26:37.610 +03:30 [DBG] Connection id "0HN1UFGES6FPJ" started.
+2024-03-07 11:26:37.653 +03:30 [DBG] Failed to authenticate HTTPS connection.
+System.IO.IOException:  Received an unexpected EOF or 0 bytes from the transport stream.
+   at System.Net.Security.SslStream.ReceiveBlobAsync[TIOAdapter](TIOAdapter adapter)
+   at System.Net.Security.SslStream.ForceAuthenticationAsync[TIOAdapter](TIOAdapter adapter, Boolean receiveFirst, Byte[] reAuthenticationData, Boolean isApm)
+   at Microsoft.AspNetCore.Server.Kestrel.Https.Internal.HttpsConnectionMiddleware.OnConnectionAsync(ConnectionContext context)
+2024-03-07 11:26:37.727 +03:30 [DBG] Connection id "0HN1UFGES6FPK" accepted.
+2024-03-07 11:26:37.749 +03:30 [DBG] Connection id "0HN1UFGES6FPK" started.
+2024-03-07 11:26:37.756 +03:30 [DBG] Connection id "0HN1UFGES6FPJ" stopped.
+2024-03-07 11:26:37.763 +03:30 [DBG] Connection id "0HN1UFGES6FPJ" sending FIN because: "The Socket transport's send loop completed gracefully."
+2024-03-07 11:26:37.805 +03:30 [DBG] Connection 0HN1UFGES6FPK established using the following protocol: "Tls12"
+2024-03-07 11:26:37.866 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/swagger/index.html - -
+2024-03-07 11:26:37.921 +03:30 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-03-07 11:26:38.039 +03:30 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-03-07 11:26:38.145 +03:30 [DBG] Response markup was updated to include browser refresh script injection.
+2024-03-07 11:26:38.153 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/_framework/aspnetcore-browser-refresh.js - -
+2024-03-07 11:26:38.155 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/swagger/index.html - - - 200 - text/html;charset=utf-8 288.1873ms
+2024-03-07 11:26:38.156 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/_vs/browserLink - -
+2024-03-07 11:26:38.161 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/_framework/aspnetcore-browser-refresh.js - - - 200 12000 application/javascript;+charset=utf-8 7.8581ms
+2024-03-07 11:26:38.228 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 72.1218ms
+2024-03-07 11:26:38.315 +03:30 [INF] Request starting HTTP/2 GET https://localhost:7267/swagger/v1/swagger.json - -
+2024-03-07 11:26:38.468 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate Operation for action - WebAPI_Core.API.Controllers.PointsOfInterestController.GetPoint (WebAPI_Core.API). See inner exception
+ ---> Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Failed to generate schema for type - System.Collections.Generic.IEnumerable`1[WebAPI_Core.API.Model.PointOfInterest]. See inner exception
+ ---> System.InvalidOperationException: Can't use schemaId "$PointOfInterest" for type "$WebAPI_Core.API.Model.PointOfInterest". The same schemaId is already used for type "$WebAPI_Core.API.Entites.PointOfInterest"
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaRepository.RegisterType(Type type, String schemaId)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateReferencedSchema(DataContract dataContract, SchemaRepository schemaRepository, Func`1 definitionFactory)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateConcreteSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchemaForType(Type modelType, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchema(Type modelType, SchemaRepository schemaRepository, MemberInfo memberInfo, ParameterInfo parameterInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.CreateArraySchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.<>c__DisplayClass10_0.<GenerateConcreteSchema>b__1()
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateConcreteSchema(DataContract dataContract, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchemaForType(Type modelType, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SchemaGenerator.GenerateSchema(Type modelType, SchemaRepository schemaRepository, MemberInfo memberInfo, ParameterInfo parameterInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchema(Type type, SchemaRepository schemaRepository, PropertyInfo propertyInfo, ParameterInfo parameterInfo)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateSchema(Type type, SchemaRepository schemaRepository, PropertyInfo propertyInfo, ParameterInfo parameterInfo)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.CreateResponseMediaType(ModelMetadata modelMetadata, SchemaRepository schemaRespository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.<>c__DisplayClass19_0.<GenerateResponse>b__2(String contentType)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector, IEqualityComparer`1 comparer)
+   at System.Linq.Enumerable.ToDictionary[TSource,TKey,TElement](IEnumerable`1 source, Func`2 keySelector, Func`2 elementSelector)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateResponse(ApiDescription apiDescription, SchemaRepository schemaRepository, String statusCode, ApiResponseType apiResponseType)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateResponses(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   --- End of inner exception stack trace ---
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperation(ApiDescription apiDescription, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwagger(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+2024-03-07 11:26:38.558 +03:30 [INF] Request finished HTTP/2 GET https://localhost:7267/swagger/v1/swagger.json - - - 500 - text/plain;+charset=utf-8 241.8625ms
+2024-03-07 11:26:43.229 +03:30 [DBG] Connection id "0HN1UFGES6FPK" received FIN.
+2024-03-07 11:26:43.260 +03:30 [DBG] Connection id "0HN1UFGES6FPK" is closed. The last processed stream ID was 7.
+2024-03-07 11:26:43.270 +03:30 [DBG] Connection id "0HN1UFGES6FPK" sending FIN because: "The client closed the connection."
+2024-03-07 11:26:43.275 +03:30 [DBG] Connection id "0HN1UFGES6FPK" stopped.
